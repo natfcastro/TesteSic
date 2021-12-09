@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;600;700&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-teal.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Sicredi</title>
+</head>
+<body>
+    <header id="header">
+        <div class="Header__Login">
+          <div class="dropdown">
+            <button class="btn-default dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Acessar conta com
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">CPF</a></li>
+              <li><a class="dropdown-item" href="#">CPNJ</a></li>
+              <li><a class="dropdown-item" href="#">Coop e Conta</a></li>
+            </ul>
+          </div>
+          <form class="input-login">
+            <div class=" mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="sample3">
+              <label class="mdl-textfield__label" for="sample3">
+                CNPJ
+              </label>
+            </div>
+            <img src="/src/assets/icons/arrow-right.png"/>
+          </form>
+        </div>
+        <div class="Header__Access">
+          <a href="#" class="btn-open-account">Abra sua conta</a>
+        </div>
+        <div class="Header__AccessButtons">
+          <button class="btn-black">
+            <img src="/src/assets/icons/search-icon.svg" />
+          </button>
+          <button id="btn-open-menu" class="btn-green">
+            <img src="/src/assets/icons/menu-icon.svg" />
+          </button>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="Content__Msg">
+            <h1 class="Content__Title">
+              Nós temos as melhores oportunidades
+              <span>para você</span>
+            </h1>
+
+            <p class="Content__Text">
+              Somos o parceiro ideal para te acompanhar e ajudar em todas as suas conquistas.
+              De forma responsável e transparente, nós vamos, juntos, organizar a sua vida financeira.
+            </p>
+          </div>
+
+          <div class="Content__Img">
+            <img src="/src/assets/img/cooperativismo.jpg" />
+          </div>
+
+          <div class="Content__Menu ">
+            <div>
+              <button class="btn-link">Para você</button>
+            </div>
+            <div>
+              <ul class="List-Group">
+                <li class="List-Group__Item">
+                  <a>Conta Corrente</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Cartões</a>
+                </li>
+                <li class="List-Group__Item">
+                  <span class="List-Group__NewItem">Novo</span>
+                  <a>Pix</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Consórcios</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Crédito</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Investimentos</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Pagamentos</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Previdência</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Máquina de cartões</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Seguros</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Câmbio</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Certificado Digital</a>
+                </li>
+                <li class="List-Group__Item">
+                  <a>Momentos</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <button class="btn-link">Para sua Empresa</button>
+            </div>
+            <div>
+              <button class="btn-link">Para seu Agronegócio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="menu-modal">
+      <button id="btn-close-modal">
+        <img src="/src/assets/icons/close-icon.svg" />
+      </button>
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <div class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Acesso Rápido
+            </button>
+          </div>
+      
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="collapse-body">
+              <ul class="collapse-list">
+                <li class="collapse-item">
+                  <a>Localizar Agência</a>
+                </li>
+                <li class="collapse-item">
+                  <a>Fale Conosco</a>
+                </li>
+                <li class="collapse-item">
+                  <a>Política de Privacidade</a>
+                </li>
+                <li class="collapse-item">
+                  <a>2ª via de boleto</a>
+                </li>
+                <li class="collapse-item">
+                  <a>Atendimento</a>
+                </li>
+                <li class="collapse-item">
+                  <a>Trabalhe Conosco</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

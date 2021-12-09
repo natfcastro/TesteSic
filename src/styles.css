@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+}
+
+body {
+  background: #fbfbfb;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+label {
+  margin-bottom: 0px;
+}
+
+#header {
+  display: flex;
+  justify-content: flex-end;
+  background: #fff;
+  height: 80px;
+  display: flex;
+  z-index: 10;
+  width: 100%;
+}
+
+.Header__AccessButtons {
+  display: flex;
+}
+
+.Header__Login {
+  display: none;
+}
+
+.Header__Access {
+  display: flex;
+}
+
+.btn-link {
+  color: #69be41;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: .5px;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  color: #69be41;
+}
+
+.btn-default {
+  background: transparent;
+  font-weight: 600;
+}
+
+.btn-default::after {
+  color: #3fa110;
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown-menu {
+  background: #fff;
+  border: none;
+  box-shadow: 0 3px 7px rgb(0 0 0 / 30%);
+  transform: translate3d(0px, 47px, 0px);
+}
+
+.dropdown-item {
+  display: grid;
+  align-content: center;
+  width: 70%;
+  height: 4vw;
+  color: #323c32;
+  margin: auto;
+}
+
+.dropdown-item + .dropdown-item::after {
+  content: "";
+  position: absolute;
+  left: 15%;
+  width: 70%;
+  border-bottom: 2px solid #eef0ee;
+}
+
+.input-login {
+  display: flex;
+  margin: 0 20px;
+  width: 200px;
+}
+
+.input-login img {
+  height: 15px;
+  margin: auto 10px;
+}
+
+.btn-open-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #3fa110;
+  text-decoration: none;
+  height: 50px;
+  margin-top: 12px;
+  margin-right: 18px;
+  width: 120px;
+  border-radius: 0.25rem;
+}
+
+.btn-open-account:hover {
+  background: #2f8a04;
+  color: #fff;
+}
+
+.btn-black, .btn-green {
+  height: 80px;
+  width: 80px;
+}
+
+.btn-black {
+  background: #323c32;
+}
+
+.btn-green {
+  background: #3fa110;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.Content__Msg {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 40px;
+}
+
+.Content__Title {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 69px;
+  color: #757575;
+}
+
+.Content__Title span {
+  color: #64c832;
+  font-weight: 500;
+}
+
+.Content__Text {
+  font-family: 'Nunito';
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: .14px;
+  color: #5a645b;
+}
+
+.Content__Img {
+  flex: 1;
+  display: none;
+}
+
+.Content__Menu {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: left;
+}
+
+.List-Group__Item {
+  color: #6e6e6e;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.List-Group__Item:hover {
+  text-decoration: underline;
+}
+
+.List-Group__NewItem {
+  background-color: #ffeb98;
+  border-radius: 15px;
+  font-size: 14px;
+  margin: auto 10px auto auto;
+  padding: 2px 15px;
+}
+
+#overlay {
+  display: none;
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.46);
+}
+
+#menu-modal {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3fa110;
+}
+
+#btn-close-modal {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.accordion {
+  padding: 70px;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-header {
+  background: #35890d;
+  padding: 2vw 4vw;
+  border: none;
+}
+
+.accordion-button {
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1rem;
+  cursor: pointer;
+}
+
+.collapse {
+  background: #3fa110;
+}
+
+.collapse-item {
+  font-size: 1.1rem;
+  line-height: 4rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.collapse-item:hover {
+  text-decoration: underline;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border: none;
+}
+
+@media (min-width: 515px) {
+  .Content__Img {
+    display: block;
+  }
+}
+
+@media (min-width: 600px) {
+  #header {
+    justify-content: space-between;
+  }
+
+  .Header__Login {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Content__Title {
+    font-size: 4rem;
+  }
+
+  .Content__Menu {
+    text-align: right;
+  }
+
+  #menu-modal {
+    width: 600px;
+  }
+}
+
+@media (min-width: 820px) {
+  .btn-open-account {
+    width: 150px;
+    height: 52px;
+    background-color: #3fa110;
+    color: #fff;
+    margin-right: 38px;
+  }
+}
